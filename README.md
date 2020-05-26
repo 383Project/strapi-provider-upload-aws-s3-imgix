@@ -10,13 +10,19 @@ Your configuration is passed down to the provider. (e.g: `new AWS.S3(config)`). 
 
 ```json
 {
-  "provider": "aws-s3",
+  "provider": "aws-s3-imgix",
   "providerOptions": {
-    "accessKeyId": "dev-key",
-    "secretAccessKey": "dev-secret",
-    "region": "aws-region",
-    "params": {
-      "Bucket": "my-bucket"
+    "aws": {
+      "accessKeyId": "dev-key",
+      "secretAccessKey": "dev-secret",
+      "region": "aws-region",
+      "params": {
+        "Bucket": "my-bucket"
+      }
+    },
+    "imgix": {
+      "domain": "imgix-domain",
+      "pathPrefix": "imgix-path-prefix"
     }
   }
 }
