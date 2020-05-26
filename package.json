@@ -1,7 +1,26 @@
 {
   "name": "strapi-provider-upload-aws-s3-imgix",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "AWS S3 backed Imgix provider for strapi upload",
   "author": "Chris Evans <chris.muttley.evans@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "upload",
+    "aws",
+    "s3",
+    "strapi",
+    "imgix"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib",
+  "dependencies": {
+    "aws-sdk": "^2.457.0",
+    "lodash": "^4.17.11"
+  },
+  "strapi": {
+    "isProvider": true
+  }
 }
