@@ -1,0 +1,7 @@
+{
+  "name": "strapi-provider-upload-aws-s3-imgix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Chris Evans <chris.muttley.evans@gmail.com>",
+  "license": "MIT"
+}
